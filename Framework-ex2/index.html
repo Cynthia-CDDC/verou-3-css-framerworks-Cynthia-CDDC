@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Framework-ex-2</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row bg-secondary bg-opacity-50 py-5">
+            <div class="col ps-5 pe-2">
+                <!--logo-->
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                    <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"/>
+                </svg>
+                <div class="py-5">
+                    <h1 class="text-white fs-2">Lorem ipsum dolor sit amet consectet</h1>
+                    <p class="text-start text-white fs-3">Start aligned text on all viewport sizes.</p>
+                    <ul class="text-white">
+                        <li>are unaffected by this style</li>
+                        <li>will still show a bullet</li>
+                        <li>and have appropriate left margin</li>
+                    </ul>
+                    <button type="button" class="btn btn-danger">MAIN CTA BUTTON</button>
+                    <button type="button" class="btn btn-secondary">
+                        <a href="#overview" class="text-decoration-none link-light">Learn More</a>
+                    </button>
+                </div>
+            </div>
+            <div class="col text-white ps-2 pe-5">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-secondary opacity-50 me-md-2" type="button">Support</button>
+                    <button class="btn btn-secondary" type="button">Log In</button>
+                </div>
+                <div class="h-100 d-flex justify-content-center align-items-center">
+                    <!--play logo -- should be a video <iframe width="160" height="90" src=""></iframe>--but random one from youtube is not practical-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="currentColor" class="bi bi-play-circle " viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container border"><!--navbar-->
+        <div class="row py-2">
+            <div class="col ps-5 pe-2"><!--logo on navbar-->
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                    <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"/>
+                </svg>
+            </div>
+            <div class="col ps-2 pe-5 d-flex justify-content-between align-items-center"><!--links to other chapters on the page-->
+                <button type="button" class="btn">
+                    <a href="#overview" class="text-decoration-none link-secondary">Overview</a>
+                </button>
+                <button type="button" class="btn text-nowrap">
+                    <a href="#overview" class="text-decoration-none link-secondary">One-on-One</a>
+                </button>
+                <button type="button" class="btn">
+                    <a href="#overview" class="text-decoration-none link-secondary">Testimonials</a>
+                </button>
+                <button type="button" class="btn">
+                    <a href="#overview" class="text-decoration-none link-secondary">More</a>
+                </button>
+                <!--CTA button on navbar-->
+                <button type="button" class="btn btn-danger text-nowrap">MAIN CTA BUTTON</button>
+            </div>
+        </div>
+    </div>
+    <div class="container pt-5 border" id="overview"><!--overview-->
+        <div class="row">
+            <div class="col ps-5 pe-2">
+                <p class="mb-0">Lorem ipsum dolor</p>
+                <h2 lass="mb-4">Learn what you need to know</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam animi accusamus cumque. Cum ullam officiis et enim tempore, beatae, dicta nulla eaque eius ex totam deleniti sed alias, ad ea.</p>
+            </div>
+            <div class="col ps-2 pe-5 h-100 d-flex justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="currentColor" class="bi bi-question-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215 0 1.344-.665 2.288-1.79 2.973-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712 1.03-.632 1.397-1.135 1.397-2.028 0-.979-.758-1.698-1.926-1.698-1.009 0-1.71.529-1.938 1.402-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09 0-.618-.473-1.092-1.095-1.092-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z"/>
+                </svg>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col ps-2 pe-5">
+                <div class="col ps-2 pe-5 h-100 d-flex justify-content-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="col ps-5 pe-2">
+                <p class="mb-0">Pellentesqu habitant</p>
+                <h2 class="mb-4">Class aptent taciti sociousqe</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sequi eligendi recusandae eum consequatur ipsam sapiente repellendus quo corporis architecto soluta, amet dignissimos animi praesentium quisquam quia est nulla. Sit.</p>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col ps-5 pe-2">
+                <p class="mb-0">50 Point guarantee</p>
+                <h2 class="mb-4">A fuarantee our competitors wouldn't dare make</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et totam itaque doloribus excepturi repudiandae tempora temporibus maiores laboriosam ad voluptate quo alias, minima quasi quod sint suscipit nostrum aut voluptatem!</p>
+            </div>
+            <div class="col ps-2 pe-5">
+                <div class="col ps-2 pe-5 h-100 d-flex justify-content-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container pt-5 border" id="one-on-one"><!--one on one-->
+        <h2 class="text-center">One-on-One</h2>
+        <div class="row row-columns-4 ps-5 pe-2 d-flex pt-4">
+            <div class="col">
+                <p class="mb-0">Conversational format</p>
+                <h2 class="mb-4">Dialogue with a tutor</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et totam itaque doloribus excepturi repudiandae tempora temporibus maiores laboriosam ad voluptate quo alias, minima quasi quod sint suscipit nostrum aut voluptatem!</p>
+            </div>
+            <div class="col d-flex justify-content-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+                <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+            </svg>
+            </div>
+            <div class="col">
+                <p class="mb-0">One-on-One tutor sessions</p>
+                <h2 class="mb-4">Personalized support</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et totam itaque doloribus excepturi repudiandae tempora temporibus maiores laboriosam ad voluptate quo alias, minima quasi quod sint suscipit nostrum aut voluptatem!</p>   
+            </div> 
+            <div class="col d-flex justify-content-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-display" viewBox="0 0 16 16">
+                <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z"/>
+            </svg>
+            </div>  
+        </div>
+        <div class="row row-columns-4 ps-5 pe-2 d-flex pt-4">
+            <div class="col">
+                <p class="mb-0">Dashboard</p>
+                <h2 class="mb-4">Keep track of your progress</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et totam itaque doloribus excepturi repudiandae tempora temporibus maiores laboriosam ad voluptate quo alias, minima quasi quod sint suscipit nostrum aut voluptatem!</p>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
+                    <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2z"/>
+                </svg> 
+            </div>
+            <div class="col">
+                <p class="mb-0">Ask a tutor</p>
+                <h2 class="mb-4">Get answers from the experts</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et totam itaque doloribus excepturi repudiandae tempora temporibus maiores laboriosam ad voluptate quo alias, minima quasi quod sint suscipit nostrum aut voluptatem!</p>
+            </div> 
+            <div class="col d-flex justify-content-center">
+                <img src="q&a.png" alt="Q&A" class="w-50 h-50">
+            </div>
+        </div>
+    </div>
+    <div class="container pt-5 pb-4 border" id="testimonials"><!--testimonial videos-->
+        <div class="row pt-4 pb-4">
+            <h2 class="text-center mb-4">Testimonials</h2>
+            <div class="d-flex justify-content-evenly">
+                <div class="card">
+                    <!--play logo -- should be a video <iframe width="160" height="90" src=""></iframe>--but random one from youtube is not practical-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                    </svg>
+                    <div class="card-body">
+                        <p class="card-text">"Lorem ipsum dolor sit amet"</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <!--play logo -- should be a video <iframe width="160" height="90" src=""></iframe>--but random one from youtube is not practical-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-play-circle " viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                    </svg>
+                    <div class="card-body">
+                        <p class="card-text">"Lorem ipsum dolor sit amet"</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <!--play logo -- should be a video <iframe width="160" height="90" src=""></iframe>--but random one from youtube is not practical-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-play-circle " viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                    </svg>
+                    <div class="card-body">
+                        <p class="card-text">"Lorem ipsum dolor sit amet"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container pt5 border" id="more"><!--more-->
+        <div class="row pt-4">
+            <h2 class="text-center mb-4">Wait, there's more!</h2>
+            <div class="col ps-5 pe-2">
+                <p class="mb-0">Learn anywhere</p>
+                <h2 class="mb-4">Learn anywhere, anytime</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam animi accusamus cumque. Cum ullam officiis et enim tempore, beatae, dicta nulla eaque eius ex totam deleniti sed alias, ad ea.</p>
+            </div>
+            <div class="col ps-2 pe-5 h-100 d-flex justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                    <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-tablet-landscape" viewBox="0 0 16 16">
+                    <path d="M1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4zm-1 8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8z"/>
+                    <path d="M14 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="currentColor" class="bi bi-display-fill ps-2" viewBox="0 0 16 16">
+                    <path d="M6 12c0 .667-.083 1.167-.25 1.5H5a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-.75c-.167-.333-.25-.833-.25-1.5h4c2 0 2-2 2-2V4c0-2-2-2-2-2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h4z"/>
+                </svg>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col ps-2 pe-5">
+                <div class="col ps-2 pe-5 h-100 d-flex justify-content-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+                        <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+                        <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="col ps-5 pe-2">
+                <p class="mb-0">Practice exams</p>
+                <h2 class="mb-4">Feugiat consequat dictum et lacus</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sequi eligendi recusandae eum consequatur ipsam sapiente repellendus quo corporis architecto soluta, amet dignissimos animi praesentium quisquam quia est nulla. Sit.</p>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col ps-5 pe-2">
+                <p class="mb-0">Progress reports</p>
+                <h2 class="mb-4">Aliquam arcu elit</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et totam itaque doloribus excepturi repudiandae tempora temporibus maiores laboriosam ad voluptate quo alias, minima quasi quod sint suscipit nostrum aut voluptatem!</p>
+            </div>
+            <div class="col ps-2 pe-5">
+                <div class="col ps-2 pe-5 h-100 d-flex justify-content-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
+                        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" container d-block text-center ps-5 pe-5 pt-5 border">
+        <button type="button" class="btn btn-danger">IT'S A REALLY BIG CTA</button> 
+        <P>Try it free for 7 days with no commitment</P>
+    </div>
+    <div class="container-fluid d-flex justify-content-center bg-secondary bg-opacity-50 py-5"><!--footer-->
+        Footer
+    </div>
+</body>
+</html>
